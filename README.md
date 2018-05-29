@@ -18,9 +18,8 @@ in your terminal and run the following command:
 `python recommender.py name-of-the-dataset name-of-the-algorithm threshold`
 
 The first argument stands for the dataset to be used for the predictions.
-The only dataset that we provide on github is the: *mock-dataset.csv*. This is just a mock dataset
-containing only 48 users and, 580 items and 990 transactions. It is enough for a demonstration of the prototype, but for the
-research purposes this dataset is scarce. 
+
+We provide two datasets for this project purpose: `trainingDataset1.csv` and `testDataset1.csv`
 
 The next argument specifies the algorithm. The current state of the system provides three link predictions algorithms to choose from. 
 Just write tone of the following names, as the second argument of the command to use the desired index:
@@ -47,7 +46,7 @@ Finaly depending on the algorithm, a range of optimal threshold values for the d
 One specific example of how the first functionality can be run:
 Assuming python 3 is the default version installed on the pc:
 
-`python recommender.py data.csv common_neighbours 300`
+`python recommender.py trainingDataset1.csv common_neighbours 300`
 
 
 For the second functionality of the recommender. Namelly the visualisation feature, one user only needs to run the following command:
